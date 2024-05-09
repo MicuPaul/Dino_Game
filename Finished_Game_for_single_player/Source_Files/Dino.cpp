@@ -8,8 +8,8 @@ void Dino::initVariables() {
 }
 
 void Dino::initTexture(){
-    if(!this->textureSheet.loadFromFile("/home/alexpail/Documents/Dino_Game/Spirtesheet/sprite.png")){
-        std::cout << "ERROR::DINO::Could not load player sheet" << "\n";
+    if(!this->textureSheet.loadFromFile("/home/alexpail/Documents/Dino_Game/Finished_Game_for_single_player/Spirtesheet/sprite.png")){
+        std::cout << "ERROR::DINO::Could not load sprite sheet" << "\n";
     }
 }
 
