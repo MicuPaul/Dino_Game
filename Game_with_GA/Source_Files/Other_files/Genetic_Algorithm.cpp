@@ -207,7 +207,7 @@ void Genetic_Algorithm::GenerateNewPopulation() {
     bool can_read = true;
     this->ClearPopulation();
 
-    std::ifstream rf("/home/alexpail/Documents/Dino_Game/Game_with_GA/Saved_Generation.dat", std::ios::out | std::ios::binary);
+    std::ifstream rf("Saved_Generation.dat", std::ios::out | std::ios::binary);
     if (!rf) {
         std::cout << "Cannot open NN binary file!" << std::endl;
         can_read = false;
@@ -324,7 +324,8 @@ void Genetic_Algorithm::BreedPopulation()
     this->Selected_Best = false;
     this->SelectBestTimer = 0;
 
-    std::ofstream wf("/home/alexpail/Documents/Dino_Game/Game_with_GA/Saved_Generation.dat", std::ios::out | std::ios::binary);
+
+    std::ofstream wf("Saved_Generation.dat", std::ios::out | std::ios::binary);
 
     if (!wf) {
         std::cout << "Cannot open NN binary file!" << std::endl;
@@ -390,7 +391,7 @@ void Genetic_Algorithm::renderInfo(sf::RenderTarget &target, unsigned int score)
     std::ostringstream ss; //string buffer to convert numbers to string
     ss << "Generation: " << this->generation << "\nAlive: " << this->GetDinosAlive() << "\nScore: " << score;
     sf::Font font;
-    if (!font.loadFromFile("/home/alexpail/Documents/Dino_Game/Game_with_GA/Spritesheet/Arial.ttf"))
+    if (!font.loadFromFile("Spritesheet/Arial.ttf"))
     {
         std::cout << "ERROR: Could not load Font!";
     }

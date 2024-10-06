@@ -14,7 +14,7 @@ void Game::initWindow(){
 }
 
 void Game::initSpritesheet() {
-    if(!this->spriteSheet.loadFromFile("sprite.png")){
+    if(!this->spriteSheet.loadFromFile("Spritesheet/sprite.png")){
         std::cout << "ERROR::GAME::Could not load sprite sheet" << "\n";
     }
 }
