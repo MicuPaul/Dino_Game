@@ -13,9 +13,6 @@ set(GAME_HEADER Header_Files/Game_files)
 set(OTHER_SOURCE Source_Files/Other_files)
 set(OTHER_HEADER Header_Files/Other_files)
 
-set(SPRITES ./Game_with_GA/Spritesheet)
-include_directories(${SPRITES})
-
 include_directories(${GAME_SOURCE})
 include_directories(${GAME_HEADER})
 include_directories(${OTHER_SOURCE})
