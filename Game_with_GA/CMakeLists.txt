@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(Dino_Game)
+project(Game_with_GA)
 
 include(FetchContent)
 set(BUILD_SHARED_LIBS OFF)

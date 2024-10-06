@@ -12,6 +12,8 @@ int main(){
         game.render();
     }
 
+    std::cout<<"Game Version: For single player";
+
     return 0;
 }
 

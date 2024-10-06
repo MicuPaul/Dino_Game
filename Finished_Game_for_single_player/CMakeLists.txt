@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(Dino_Game)
+project(Finished_Game_for_single_player)
 
 include(FetchContent)
 set(BUILD_SHARED_LIBS OFF)
@@ -37,10 +37,10 @@ set(
         ${APP_SOURCE}/stdafx.cpp
 )
 
-add_executable(Dino_Game ${SOURCE_FILES})
+add_executable(Finished_Game_for_single_player ${SOURCE_FILES})
 
-target_link_libraries(Dino_Game sfml-graphics)
-target_link_libraries(Dino_Game sfml-audio)
-target_link_libraries(Dino_Game sfml-system)
-target_link_libraries(Dino_Game sfml-window)
-target_link_libraries(Dino_Game sfml-network)
+target_link_libraries(Finished_Game_for_single_player sfml-graphics)
+target_link_libraries(Finished_Game_for_single_player sfml-audio)
+target_link_libraries(Finished_Game_for_single_player sfml-system)
+target_link_libraries(Finished_Game_for_single_player sfml-window)
+target_link_libraries(Finished_Game_for_single_player sfml-network)
