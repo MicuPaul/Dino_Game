@@ -4,4 +4,4 @@ I also intend to apply a genetic algorithm with the help of a neural network and
 I intend to do the genetic algorithm with the neural network defined by me in C++ from scratch and the NEAT algorithm I'll implement 
 with python.
 
-[![Watch the video]](https://raw.githubusercontent.com/username/repository/branch/path/to/video.mp4)
+[![Watch the video]]((https://github.com/MicuPaul/Dino_Game/blob/main/Video_demos/Dino_SinglePlayer.mp4))
