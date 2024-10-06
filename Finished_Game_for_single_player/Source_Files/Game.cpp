@@ -10,7 +10,7 @@ void Game::initWindow(){
 }
 
 void Game::initSpritesheet() {
-    if(!this->spriteSheet.loadFromFile("/home/alexpail/Documents/Dino_Game/Finished_Game_for_single_player/Spritesheet/sprite.png")){
+    if(!this->spriteSheet.loadFromFile("Spritesheet/sprite.png")){
         std::cout << "ERROR::GAME::Could not load sprite sheet" << "\n";
     }
     this->gameOverSprites.resize(2);
@@ -44,13 +44,13 @@ void Game::initScore() {
 
 void Game::initSounds() {
     this->buff.resize(3);
-    if (!this->buff[0].loadFromFile("/home/alexpail/Documents/Dino_Game/Finished_Game_for_single_player/Sounds/jump.wav"))
+    if (!this->buff[0].loadFromFile("Sounds/jump.wav"))
         std::cout << "ERROR::GAME::Could not load jump sound" << "\n";
     this->jumpSound.setBuffer(this->buff[0]);
-    if (!this->buff[1].loadFromFile("/home/alexpail/Documents/Dino_Game/Finished_Game_for_single_player/Sounds/die.wav"))
+    if (!this->buff[1].loadFromFile("Sounds/die.wav"))
         std::cout << "ERROR::GAME::Could not load death sound" << "\n";
     this->deathSound.setBuffer(this->buff[1]);
-    if (!this->buff[2].loadFromFile("/home/alexpail/Documents/Dino_Game/Finished_Game_for_single_player/Sounds/point.wav"))
+    if (!this->buff[2].loadFromFile("Sounds/point.wav"))
         std::cout << "ERROR::GAME::Could not load point sound" << "\n";
     this->pointSound.setBuffer(this->buff[2]);
 }
