@@ -1,4 +1,4 @@
-# Dino_Game
+## Dino_Game
 A recreation of the popular offline dino chrome game in C++ using the SFML library.
 
 
@@ -7,7 +7,7 @@ https://github.com/user-attachments/assets/49f8026a-3283-4187-9cf3-238f0dc0a1a6
 
 
 I trained a Neural Network AI in order to play the game where I used a Genetic Algorithm with a population of 300
-to train the best Neural Network in order to play the Game
+to train the best Neural Network in order to play the Game.<br />
 The inputs of the Network are various information about the obstacles. The inputs also contain
 the current height of the dino and the speed of the game.
 The info about the obstacles are the following:
