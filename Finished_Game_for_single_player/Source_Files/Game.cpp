@@ -10,7 +10,7 @@ void Game::initWindow(){
 }
 
 void Game::initSpritesheet() {
-    if(!this->spriteSheet.loadFromFile("/home/alexpail/Documents/Dino_Game/Finished_Game_for_single_player/Spirtesheet/sprite.png")){
+    if(!this->spriteSheet.loadFromFile("/home/alexpail/Documents/Dino_Game/Finished_Game_for_single_player/Spritesheet/sprite.png")){
         std::cout << "ERROR::GAME::Could not load sprite sheet" << "\n";
     }
     this->gameOverSprites.resize(2);

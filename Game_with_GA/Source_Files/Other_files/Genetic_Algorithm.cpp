@@ -390,7 +390,7 @@ void Genetic_Algorithm::renderInfo(sf::RenderTarget &target, unsigned int score)
     std::ostringstream ss; //string buffer to convert numbers to string
     ss << "Generation: " << this->generation << "\nAlive: " << this->GetDinosAlive() << "\nScore: " << score;
     sf::Font font;
-    if (!font.loadFromFile("/home/alexpail/Documents/Dino_Game/Game_with_GA/Spirtesheet/Arial.ttf"))
+    if (!font.loadFromFile("/home/alexpail/Documents/Dino_Game/Game_with_GA/Spritesheet/Arial.ttf"))
     {
         std::cout << "ERROR: Could not load Font!";
     }
