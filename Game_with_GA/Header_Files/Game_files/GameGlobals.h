@@ -55,10 +55,10 @@ inline T as(const U& u)
 template<typename T>
 inline sf::Color toColor(const sf::Vector3<T>& v)
 {
-    const uint8_t r = as<uint8_t>(v.x);
-    const uint8_t g = as<uint8_t>(v.y);
-    const uint8_t b = as<uint8_t>(v.z);
-    return sf::Color(std::min(uint8_t(255), r), std::min(uint8_t(255), g), std::min(uint8_t(255), b));
+    const int r = as<int>(v.x);
+    const int g = as<int>(v.y);
+    const int b = as<int>(v.z);
+    return sf::Color(std::min(int(255), r), std::min(int(255), g), std::min(int(255), b));
 }
 
 inline float getAngle(const sf::Vector2f & v)
